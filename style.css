@@ -2,8 +2,6 @@
 
  body {
   font-family: "Lato", sans-serif;
-
-
 }
 
 h2 {
@@ -124,6 +122,7 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+
 }
 
 form label {
@@ -163,4 +162,82 @@ footer p {
 
 @media all and (min-width:480px){
 
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  form .menuItem{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 0 15px;
+  }
+  .menu button{
+    width: 15%;
+    text-align: center;
+  }
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 0 40px 0;
+  }
+
+  header{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+  }
+
+#about img{
+  width: 25%;
+  margin: 10px;
+}
+#about p{
+  display: flex;
+  align-self: center;
+}
+
+#ideas img{
+  width: 50%;
+}
+
+#ideas .group{
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#ideas .group .menu{
+  flex-direction: row;
+  margin: 0 10px;
+}
+
+#ideas .group .menu div img{
+  width: 100%;
+  max-width: 1200px;
+}
+
+#host img{
+  width: 50%;
+  align-self: flex-end;
+}
+
+#host .group div{
+  align-self: center;
+  text-align: left;
+}
+.forest, .rustic{
+  margin: 0 10px 0 0;
+}
 } 
