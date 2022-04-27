@@ -1,6 +1,6 @@
 /* -------  General Styles -------*/
 
- body {
+body {
   font-family: "Lato", sans-serif;
 }
 
@@ -26,24 +26,39 @@ section {
   padding: 20px;
 }
 
-section img{
+section img {
   margin: 15px 0;
 }
-#about p{
-  font-size: 24px;
+#about p {
+  font-size: clamp(10px, 4vw, 18px);
   font-weight: 550;
 }
-#ideas img{
+#about h2 {
+  font-size: clamp(18px, 4vw, 26px);
+}
+#ideas img {
   margin: -5px 0;
 }
-
-#host p{
-  font-size: 24px;
+#ideas h2 {
+  font-size: clamp(14px, 4vw, 26px);
+}
+#ideas h3 {
+  font-size: clamp(10px, 4vw, 18px);
+}
+#host ul{
+  margin: -5px;
+  justify-content: left;
+}
+#host p {
+  font-size: clamp(10px, 4vw, 18px);
   font-weight: 500;
 }
-#host ul li{
-  font-size: 24px;
+#host ul li {
+  font-size: clamp(10px, 4vw, 18px);
   font-weight: 500;
+}
+#host h2 {
+  font-size: clamp(16px, 4vw, 26px);
 }
 section.alternate-background {
   background-color: #00a699;
@@ -52,7 +67,7 @@ section.alternate-background {
 
 main img {
   width: 100%;
-} 
+}
 
 /* ---  Groups & Items --- */
 
@@ -65,6 +80,7 @@ main img {
 .item {
   flex-grow: 1;
   margin: 10px;
+  width: 100%;
 }
 
 .item-double {
@@ -76,13 +92,16 @@ main img {
   flex-direction: column;
 }
 
-form .menuItem{
+form .menuItem {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 /* -------  Navigation ------- */
+#menu .item {
+  margin: 0px;
+}
 
 header {
   background-color: #ff385c;
@@ -92,21 +111,23 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 16vw;
   color: #fff;
 }
 
+header nav ul:first-child {
+  margin-right: 30px;
+}
 header nav ul li {
   list-style-type: none;
-  
 }
 
 header nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 0 20px 0 0;
-  
-  font-size: 24px
+  padding: 0;
+
+  font-size: clamp(8px, 4vw, 18px);
 }
 
 header nav ul li a:hover {
@@ -114,18 +135,28 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-#menu{
+#menu {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  align-self: center;
+  padding-bottom: 20px;
+  justify-content: space-evenly;
+}
+#menu .item {
+  margin-right: 0px;
 }
 /* -------  Search Form ------- */
+#stay h2 {
+  font-size: clamp(14px, 4vw, 26px);
+}
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-
 }
 
 form label {
+  font-size: clamp(8px, 4vw, 18px);
   font-weight: bold;
 }
 
@@ -133,6 +164,7 @@ form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
+  font-size: clamp(8px, 4vw, 18px);
 }
 
 form button {
@@ -160,27 +192,47 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width:480px){
+@media all and (min-width: 480px) {
+  .logo {
+    font-size: 5vw;
+    align-self: center;
+    padding-bottom: 20px;
+  }
 
-  .menu{
+  .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
     flex-wrap: wrap;
+    
   }
-
-  form .menuItem{
+  #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 0;
+    margin-top: 30px;
+  }
+  #menu .item {
+    margin-right: 10px;
+  }
+  header nav ul:last-child {
+    margin-right: 0;
+  }
+  header nav ul li a {
+    font-size: 2vw;
+  }
+  form .menuItem {
     display: flex;
     flex-direction: column;
     margin: 15px 0 0 15px;
   }
-  .menu button{
+  .menu button {
     width: 15%;
     text-align: center;
   }
-  nav{
+  nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -188,7 +240,7 @@ footer p {
     padding: 0 0 40px 0;
   }
 
-  header{
+  header {
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -199,45 +251,61 @@ footer p {
     flex-direction: row;
     margin: 20px;
   }
-
-#about img{
-  width: 25%;
-  margin: 10px;
-}
-#about p{
-  display: flex;
+.item{
+  width: 50%;
   align-self: center;
 }
 
-#ideas img{
-  width: 50%;
-}
+  #about img {
+    width: 25%;
+    margin: 10px;
+    height: 25%;
+    align-self: center;
+  }
+  main img{
+    width: 100px;
+  }
+  #about p {
+    display: flex;
+    align-self: center;
+  }
 
-#ideas .group{
-  justify-content: space-between;
-  flex-direction: column;
-}
+  #ideas img {
+    width: 50%;
+  }
 
-#ideas .group .menu{
-  flex-direction: row;
-  margin: 0 10px;
-}
+  #ideas .group {
+    justify-content: space-between;
+    flex-direction: column;
+  }
 
-#ideas .group .menu div img{
-  width: 100%;
-  max-width: 1200px;
-}
+  #ideas .group .menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+    flex-wrap: nowrap;
+  }
 
-#host img{
-  width: 50%;
-  align-self: flex-end;
-}
+  #ideas .group .menu div img {
+    width: 100%;
+    max-width: 1200px;
+  }
 
-#host .group div{
-  align-self: center;
-  text-align: left;
+  #host img {
+    width: 50%;
+    margin: 10px;
+    height: 50%;
+    align-self: center;
+    
+  }
+
+  #host .group div {
+    align-self: center;
+    text-align: left;
+    justify-self: center;
+  }
+  .forest,
+  .rustic {
+    margin: 0 10px 0 0;
+  }
 }
-.forest, .rustic{
-  margin: 0 10px 0 0;
-}
-} 

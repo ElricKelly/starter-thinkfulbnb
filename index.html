@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       rel="stylesheet"
       type="text/css"
-    /> 
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Pangolin&family=Lato&display=swap"
@@ -36,58 +36,79 @@
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
         <form class="menu">
-        <div class="menuItem">
-          <label for="location">Location</label>
-          <input type="text" id="location" name="location" required placeholder="Search destination">
-        </div>
-        <div class="menuItem">
-          <label for="arrivalDate">Arrive</label>
-          <input type="date" id="trip-start" name="arrivalDate" value="01-01-2000" min="01-01-2000" max="12-31-3000">
-        </div>
-        <div class="menuItem">
-          <label for="departureDate">Depart</label>
-          <input type="date" id="trip-end" name="departureDate" value="01-01-2000" min="01-01-2000" max="12-31-3000">
-        </div>
-        <div class="menuItem">
-          <label for="rentalType">Type</label>
-          <select name="rentalType" id="type">
-            <option value="apartment">Apartment</option>
-            <option value="barn">Barn</option>
-            <option value="castle">Castle</option>
-            <option value="houseboat">Houseboat</option>
-            <option value="tiny-house">Tiny House</option>
-            <option value="yacht">Yacht</option>
-            <option value="yurt">Yurt</option>
-
-          </select>
-        </div>
+          <div class="menuItem">
+            <label for="location">Location</label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              required
+              placeholder="Search destination"
+              size="1"
+            />
+          </div>
+          <div class="menuItem">
+            <label for="arrivalDate">Arrive</label>
+            <input
+              type="date"
+              id="trip-start"
+              name="arrivalDate"
+              value="01-01-2000"
+              min="01-01-2000"
+              max="12-31-3000"
+              size=".5"
+            />
+          </div>
+          <div class="menuItem">
+            <label for="departureDate">Depart</label>
+            <input
+              type="date"
+              id="trip-end"
+              name="departureDate"
+              value="01-01-2000"
+              min="01-01-2000"
+              max="12-31-3000"
+              size=".5"
+            />
+          </div>
+          <div class="menuItem">
+            <label for="rentalType">Type</label>
+            <select name="rentalType" id="type" size="1">
+              <option value="apartment">Apartment</option>
+              <option value="barn">Barn</option>
+              <option value="castle">Castle</option>
+              <option value="houseboat">Houseboat</option>
+              <option value="tiny-house">Tiny House</option>
+              <option value="yacht">Yacht</option>
+              <option value="yurt">Yurt</option>
+            </select>
+          </div>
           <button type="submit">Search</button>
-        
-      </form>
+        </form>
       </section>
 
       <!-- About -->
       <section id="about" class="alternate-background">
         <h2>About</h2>
         <div class="group">
-        <img
-          src="images/vacation-rental-pool.png"
-          alt="Thinkfulbnb - Vacation rental pool"
-        />
+          <img
+            src="images/vacation-rental-pool.png"
+            alt="Thinkfulbnb - Vacation rental pool"
+          />
 
-        <img
-          src="images/vacation-rental-inside-stone.png"
-          alt="Thinkfulbnb - Vacation rental inside stone"
-        />
+          <img
+            src="images/vacation-rental-inside-stone.png"
+            alt="Thinkfulbnb - Vacation rental inside stone"
+          />
 
-        <p>
-          Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
-          fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
-          porttitor eget ut quam. Sed vel scelerisque ex. Duis in pharetra
-          neque, at tempus lorem. Aenean mi magna, posuere at quam sed, euismod
-          gravida neque.
-        </p>
-      </div>
+          <p>
+            Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
+            fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
+            porttitor eget ut quam. Sed vel scelerisque ex. Duis in pharetra
+            neque, at tempus lorem. Aenean mi magna, posuere at quam sed,
+            euismod gravida neque.
+          </p>
+        </div>
       </section>
 
       <!-- Ideas -->
@@ -96,55 +117,66 @@
         <div class="group">
           <div class="menu">
             <div class="forest">
-        <h3>Forest retreats</h3>
-        <img
-          src="images/forest-retreat.png"
-          alt="Thinkfulbnb - Forest retreat"
-        />
-      </div>
-      <div>
-        <h3>Beaches</h3>
-        <img src="images/beach-house.png" alt="Thinkfulbnb - Beach house" />
-      </div>
-      </div>
-      <div class="menu">
-        <div class="rustic">
-        <h3>Rustic cabins</h3>
-        <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
-      </div>
-      <div>
-        <h3>Pet-friendly</h3>
-        <img src="images/pet-friendly.png" alt="Thinkfulbnb - Pet-friendly" />
-      </div>
-      </div>
-      </div>
+              <h3>Forest retreats</h3>
+              <img
+                src="images/forest-retreat.png"
+                alt="Thinkfulbnb - Forest retreat"
+              />
+            </div>
+            <div>
+              <h3>Beaches</h3>
+              <img
+                src="images/beach-house.png"
+                alt="Thinkfulbnb - Beach house"
+              />
+            </div>
+          </div>
+          <div class="menu">
+            <div class="rustic">
+              <h3>Rustic cabins</h3>
+              <img src="images/cabin.png" alt="Thinkfulbnb - Cabin" />
+            </div>
+            <div>
+              <h3>Pet-friendly</h3>
+              <img
+                src="images/pet-friendly.png"
+                alt="Thinkfulbnb - Pet-friendly"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Host -->
       <section id="host" class="alternate-background">
         <div class="group">
           <div>
-        <h2>Want to Become a Thinkfulbnb Host?</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          molestie in est id efficitur. Sed hendrerit ut turpis quis dapibus.
-          Nam sit amet iaculis lectus. Aliquam erat volutpat. Praesent rhoncus
-          pellentesque eros in aliquet. Sed accumsan elit lacus, id ultrices
-          libero rutrum vitae.
-        </p>
-        <ul>
-          <li>Mauris in pellentesque ligula.</li>
-          <li>Sed accumsan elit lacus, id ultrices libero rutrum vitae.</li>
-          <li>Nunc vitae ex eget neque pellentesque porttitor.</li>
-          <li>Cras mollis lorem sagittis sapien imperdiet blandit. Vivamus.</li>
-          <li>
-            Donec vehicula ipsum nisi, eu consectetur leo feugiat et. Fusce eget
-            hendrerit mauris.
-          </li>
-        </ul>
-      </div>
-        <img src="images/become-a-host.png" alt="Thinkfulbnb - Become a host" />
-      </div>
+            <h2>Want to Become a Thinkfulbnb Host?</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              molestie in est id efficitur. Sed hendrerit ut turpis quis
+              dapibus. Nam sit amet iaculis lectus. Aliquam erat volutpat.
+              Praesent rhoncus pellentesque eros in aliquet. Sed accumsan elit
+              lacus, id ultrices libero rutrum vitae.
+            </p>
+            <ul>
+              <li>Mauris in pellentesque ligula.</li>
+              <li>Sed accumsan elit lacus, id ultrices libero rutrum vitae.</li>
+              <li>Nunc vitae ex eget neque pellentesque porttitor.</li>
+              <li>
+                Cras mollis lorem sagittis sapien imperdiet blandit. Vivamus.
+              </li>
+              <li>
+                Donec vehicula ipsum nisi, eu consectetur leo feugiat et. Fusce
+                eget hendrerit mauris.
+              </li>
+            </ul>
+          </div>
+          <img
+            src="images/become-a-host.png"
+            alt="Thinkfulbnb - Become a host"
+          />
+        </div>
       </section>
     </main>
 
